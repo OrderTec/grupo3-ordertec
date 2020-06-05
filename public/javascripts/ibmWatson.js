@@ -1,15 +1,5 @@
 var contextDialog = "{}";
 
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-  document.getElementById("chat").innerHTML = "";
-}
-
-
 function sendMessageToAssistant() {
   var textMessage = document.chatForm.textMessage.value;
   chat = document.getElementById("chat");
@@ -20,7 +10,7 @@ function sendMessageToAssistant() {
   document.chatForm.textMessage.value = "";
 
   $.post(
-    "http://localhost:3000/ibmWatson/assistant",
+    "http://ordertec.herokuapp.com/ibmWatson/assistant",
     { text: textMessage, contextDialog },
     function (returnedData, statusRequest) {
       if (returnedData.status === "ERRO") alert(returnedData.data);
