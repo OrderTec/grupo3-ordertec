@@ -1,0 +1,167 @@
+.header-container {
+  text-align: center;
+  background-color: white;
+}
+
+.header-container img {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  height: 100px;
+}
+
+.menu-container {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #479fe4;
+  justify-content: center;
+}
+
+.menu-container div {
+  margin: 10px 60px 10px 60px;
+}
+
+.site-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#table-estoque {
+  font-size: 20px;
+  font-weight: normal;
+  margin: auto;
+  background-color: #addeff;
+  width: 1100px;
+  border-radius: 5px;
+  color: #1b5c8f;
+}
+
+#table-estoque input {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#table-estoque label {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#table-css {
+  margin: auto;
+}
+
+#table-inputs button {
+  margin-left: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.open-button {
+  background: none;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 15%;
+  right: 7%;
+  width: 280px;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.chat-popup div {
+  display: inline-block;
+}
+
+.chat-popup h1 {
+  color: #41df9a;
+}
+
+.form-container {
+  width: 360px;
+  padding: 10px;
+  background-color: #1b5c8f;
+  border-radius: 5px;
+}
+
+
+.form-container textarea {
+  width: 270px;
+  margin-left: -4px;
+  padding-left: 5px;
+  padding-top: 5px;
+  border: 1px solid #479fe4;
+  border-radius: 7px;
+  background: white;
+  resize: none;
+  height: 33px;
+  font-size: 18px;
+}
+
+
+.form-container textarea:focus {
+  background-color: white;
+  outline: none;
+}
+
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+#btn-send {
+  display: block;
+}
+
+#btn-send button {
+  background: none;
+  margin-bottom: 8px;
+  width: 40px;
+}
+
+
+input[type="text"] {
+  cursor: pointer;
+  height: 30px;
+  width: 130px;
+  padding-left: 5px;
+  border: 1px solid #1b5c8f;
+  border-radius: 7px;
+}
+
+input[type="number"] {
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+  padding-left: 5px;
+  border: 1px solid #1b5c8f;
+  border-radius: 7px;
+}
+
+.chat-header  {
+  width: 330px;
+  text-align: center;
+}
+
+.chat-header div {
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.chat-header button {
+  width: 30px;
+  
+}
+

@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Staatliches", cursive;
+  background-color: #e9f2f8;
+}
+
+a {
+  font-size: 24px;
+  font-family: "Staatliches", cursive;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #41df9a;
+}
+
+a:active {
+  color: #41df9a;
+}
+
+th {
+  padding-right: 50px;
+  padding-left: 50px;
+  font-weight: normal;
+}
+
+button {
+  height: 30px;
+  width: 70px;
+  border-radius: 7px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: #1b5c8f;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 90%;
+}
+
+#chat {
+  display: block;
+  text-align: left;
+  color: white;
+  font-weight: normal;
+  padding-left: 10px;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.icone-mute {
+  display: inline-block;
+}

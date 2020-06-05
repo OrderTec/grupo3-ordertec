@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/signin.css" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./javascripts/signin.js"></script>
+    <title>OrderTec</title>
+  </head>
+  <body>
+    <div class="menu-container">
+      <img src="images/OrderTec.png" alt="ordertec" />
+    </div>
+    <div class="signin-container">
+      <fieldset>
+        <div>
+          <label for="user-name">*Nome:</label>
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="cpf">*CPF:</label>
+          <input
+            type="number"
+            name="cpf"
+            id="cpf"
+            title="CPF Without '.' and '-'."
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">*E-mail:</label>
+          <input type="email" class="input-text" name="email" id="email" />
+        </div>
+        <br />
+        <div>
+          <label for="email">*Confirme seu E-mail:</label>
+          <input
+            type="email"
+            class="input-text"
+            name="email"
+            id="email-confirm"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="password">*Senha:</label>
+          <input
+            type="password"
+            class="input-text"
+            name="password"
+            id="password"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="confirm-password">*Confirme sua senha:</label>
+          <input
+            type="password"
+            class="input-text"
+            name="confirm-password"
+            id="confirm-password"
+          />
+        </div>
+        <br />
+        <br />
+        <div class="btn-form">
+          <button onclick="campValidation()">Sign In</button>
+        </div>
+      </fieldset>
+      <br />
+      <br />
+      <div>
+        <h3>Todos os campos marcados com '*' são obrigatórios.</h3>
+      </div>
+    </div>
+  </body>
+</html>

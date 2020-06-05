@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChatBot - IBM Watson Assistant</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/javascripts/ibmWatson.js"></script>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/global.css" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./javascripts/login.js"></script>
+    <title>OrderTec</title>
   </head>
   <body>
-    <h1>ChatBot PUC-Campinas</h1>
-    <form name="chatForm" method="post">
-      <input type="text" size="100px" name="textMessage" />
-      <input type="button" onclick="sendMessageToAssistant();" value="Enviar" />
-    </form>
-    <br />
-    <div id="chat"></div>
+    <div class="menu-container">
+      <img src="images/OrderTec.png" alt="ordertec" />
+    </div>
+    <div class="login-container">
+      <fieldset>
+        <div>
+          <label for="cpf">*CPF:</label>
+          <input type="text" class="input-text" name="cpf" id="cpf" />
+        </div>
+        <br />
+        <div>
+          <label for="password">*Senha:</label>
+          <input
+            type="password"
+            class="input-text"
+            name="password"
+            id="password"
+          />
+        </div>
+        <br />
+        <br />
+        <div class="btn-form">
+          <button onclick="logInVerify();">
+            Log In
+          </button>
+        </div>
+      </fieldset>
+
+      <br />
+      <p>________________________________________</p>
+      <br />
+      <br />
+      <p>Não tem registro? <a href="signin.html">Sign In</a></p>
+      <br />
+      <br />
+      <div>
+        <h3>Todos os campos marcados com '*' são obrigatórios.</h3>
+      </div>
+    </div>
   </body>
 </html>
