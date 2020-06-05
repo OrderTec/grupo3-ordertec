@@ -10,7 +10,7 @@ function sendMessageToAssistant() {
   document.chatForm.textMessage.value = "";
 
   $.post(
-    "http://ordertec.herokuapp.com/ibmWatson/assistant",
+    "/ibmWatson/assistant",
     { text: textMessage, contextDialog },
     function (returnedData, statusRequest) {
       if (returnedData.status === "ERRO") alert(returnedData.data);
